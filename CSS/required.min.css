@@ -9,7 +9,7 @@
 body {
 	height: 100vh;
 	background-color: #000;
-    background-image:url("/images/clay-banks-u27Rrbs9Dwc-unsplash.jpg");
+    background-image:url("https://cdn.jsdelivr.net/gh/shivaes207/STW-Products@master/images/clay-banks-u27Rrbs9Dwc-unsplash.jpg");
     color:#efefef;
 	background-size: cover;
 	background-position: center
