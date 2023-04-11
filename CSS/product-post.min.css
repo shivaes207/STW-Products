@@ -1,0 +1,112 @@
+
+:root{
+    --textColor: #ffffff;
+    --linkColor: rgb(58, 58, 255);
+    --priceColor: rgb(117, 117, 255);
+    --sectionBack: rgba(0, 0, 0, 0.1);
+}
+.product .container{
+    width: 80vw;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.products{
+    width: 100%;
+    align-self: center;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.product{
+    position: relative;
+    background-color: var(--sectionBack);
+    backdrop-filter: blur(100px);
+    width: 350px;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 60px;
+    border-radius: 10px;
+    transition: .3s;
+}
+.product:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+.image{
+    width:100%;
+    height: 60%;
+    display: grid;
+    place-content: center;
+}
+.image img{
+    width: 200px;
+    border-radius: 100px;
+    margin-bottom:5px
+}
+.namePrice{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.namePrice h3{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: var(--textColor);
+}
+.namePrice span{
+    font-size: 1.2em;
+    color: var(--priceColor);
+    margin-left:5px;
+}
+.product p{
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom:5px;
+}
+
+.demo{
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+}
+.demo button{
+	padding: 10px 20px;
+    background: none;
+    color: var(--textColor);
+	border: 1px solid var(--linkColor);
+	border-radius: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+}
+.demo button:hover{
+    transform: scale(1.1);
+}
+.get_btn{
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+.get_btn button{
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    background-color: var(--linkColor);
+    color: var(--textColor);
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+}
+.get_btn button:hover{
+    transform: scale(1.1);
+}

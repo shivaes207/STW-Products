@@ -1,0 +1,71 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	height: 100vh;
+	background-color: #000;
+    background-image:url("/images/clay-banks-u27Rrbs9Dwc-unsplash.jpg");
+    color:#efefef;
+	background-size: cover;
+	background-position: center
+}
+
+li {
+	list-style: none
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1rem
+}
+
+a:hover {
+	color: #add8e6
+}
+
+/* Scrollbar */
+@media screen and (min-width:768px) {
+	::-webkit-scrollbar {
+		-webkit-appearance: none;
+		width: 8px;
+		height: 5px
+	}
+
+	::-webkit-scrollbar-track {
+		background: transparent
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: rgb(146, 146, 238);
+		border-radius: 10px
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: blue;
+	}
+
+	::-webkit-scrollbar-thumb:active {
+		background: blue;
+	}
+}
+
+/* Hide Scroll */
+.scrlH::-webkit-scrollbar {
+	width: 0;
+	height: 0
+}
+
+.scrlH::-webkit-scrollbar-track {
+	background: transparent
+}
+
+.scrlH::-webkit-scrollbar-thumb {
+	background: transparent;
+	border: none
+}
